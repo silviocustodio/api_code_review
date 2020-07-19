@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.MuiCardActions-root{
+  padding: 16px !important;
+}
+
+.makeStyles-paper-21:focus{
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.orderPosition{
+  display: flex;
+  margin-top: 24px;
+  padding: 0 24px 0 24px;
+  width: 100%;
+  align-items: center;
+}
+
+.orderPosition > .date-button {
+  display: flex;
+ 
+}
+
+.react-datepicker-wrapper{
+display: "block";
+}
+
+h4 {
+  margin: 0
+}
+
+.grid-fix {
+  height: 100vh;
+}
+
+.date-button{
+  outline: 0;
+  padding: 5px 15px;
+  margin: 0 5px;
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+  font-size: 0.875rem;
+  min-width: 64px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.top-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.top-row > .orderPosition{
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.order-buttons {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .orderPosition{
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    margin-bottom: 35px;
+  }
+
+  .top-row > .orderPosition > .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  .mt-xs-1{
+    margin-top: 8px !important;
+  }
+
+  .top-row > input {
+    margin: 0;
+    width: 100%;
+  }
+
+  .orderPosition > * {
+    display: "flex";
+   
+  }
+  
+  .top-row{
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .top-row > .orderPosition {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .grid-fix {
+    height: auto;
+  }
+
+  .order-buttons {
+    margin: 0;
+  }
+
+  .top-row > .orderPosition > .react-datepicker-wrapper > .react-datepicker__input-container >  input {
+    margin: 0;
+    width: 100%;
+  }
+
+  .top-row > .orderPosition > .MuiButtonBase-root {
+    align-self: flex-end;
+    margin-top: 8px;
+  }
+
+  .search-input  {
+    width: 100%;
+  }
+
+  .search-input-container {
+    display: flex;
+  }
+  .search-input-container >.MuiFormControl-root {
+    flex: 1;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
